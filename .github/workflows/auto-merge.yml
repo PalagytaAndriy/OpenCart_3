@@ -5,6 +5,12 @@ on:
       branches:
          - develop
 
+permissions:
+   contents: write
+
+env:
+   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
    merge:
       runs-on: ubuntu-latest
@@ -17,10 +23,10 @@ jobs:
 
          - name: Merge develop into main
            run: |
-              git config user.name "github-actions"
-              git config user.email "github-actions@github.com"
-              
-              git checkout main
+              git config user.name "github-actions[bot]"
+              git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+              git fetch origin main develop
+              git checkout -B main origin/main
               git merge origin/develop --no-edit
-              
               git push origin main
