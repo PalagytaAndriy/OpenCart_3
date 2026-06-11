@@ -13,6 +13,9 @@ oc_docker_files/storage/cache/*
 !oc_docker_files/storage/cache/index.html
 oc_docker_files/storage/logs/*
 !oc_docker_files/storage/logs/index.html
+oc_docker_files/storage/logs/*.log
+oc_docker_files/storage/logs/error.log
+oc_docker_files/storage/logs/googleshopping.*.log
 oc_docker_files/storage/session/*
 !oc_docker_files/storage/session/index.html
 !oc_docker_files/storage/session/.htaccess
@@ -32,6 +35,8 @@ www/system/storage/cache/*
 !www/system/storage/cache/index.html
 www/system/storage/logs/*
 !www/system/storage/logs/index.html
+www/system/storage/logs/*.log
+www/system/storage/logs/error.log
 www/system/storage/session/*
 !www/system/storage/session/index.html
 !www/system/storage/session/.htaccess
@@ -41,3 +46,6 @@ www/system/storage/upload/*
 !www/system/storage/upload/index.html
 www/system/storage/download/*
 !www/system/storage/download/index.html
+
+# MySQL data (local bind mount; Docker uses named volume dbdata)
+oc_docker_files/database/data/
