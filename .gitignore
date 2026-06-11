@@ -1,0 +1,43 @@
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+
+# OpenCart config (DB credentials after install)
+www/config.php
+www/admin/config.php
+
+# Docker storage — runtime data (mounted volume)
+oc_docker_files/storage/cache/*
+!oc_docker_files/storage/cache/index.html
+oc_docker_files/storage/logs/*
+!oc_docker_files/storage/logs/index.html
+oc_docker_files/storage/session/*
+!oc_docker_files/storage/session/index.html
+!oc_docker_files/storage/session/.htaccess
+oc_docker_files/storage/modification/*
+!oc_docker_files/storage/modification/index.html
+oc_docker_files/storage/upload/*
+!oc_docker_files/storage/upload/index.html
+oc_docker_files/storage/download/*
+!oc_docker_files/storage/download/index.html
+
+# Generated image thumbnails
+www/image/cache/*
+!www/image/cache/index.html
+
+# System storage runtime (if used outside Docker volume)
+www/system/storage/cache/*
+!www/system/storage/cache/index.html
+www/system/storage/logs/*
+!www/system/storage/logs/index.html
+www/system/storage/session/*
+!www/system/storage/session/index.html
+!www/system/storage/session/.htaccess
+www/system/storage/modification/*
+!www/system/storage/modification/index.html
+www/system/storage/upload/*
+!www/system/storage/upload/index.html
+www/system/storage/download/*
+!www/system/storage/download/index.html
