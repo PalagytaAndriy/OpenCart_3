@@ -1,0 +1,8 @@
+{
+    "require": {
+        "twig/twig": "1.44.7"
+    },
+    "config": {
+        "vendor-dir": "storage/vendor"
+    }
+}

@@ -1,0 +1,57 @@
+services:
+  php-fpm:
+    build:
+      context: ./php-fpm
+    volumes:
+      - ../www:/var/www
+      - ./storage:/var/storage/
+    networks:
+      - app-network
+  nginx:
+    build:
+      context: ./nginx
+    volumes:
+      - ../www:/var/www
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/sites/:/etc/nginx/sites-available
+      - ./nginx/conf.d/:/etc/nginx/conf.d
+    depends_on:
+      - php-fpm
+    ports:
+      - "8181:80"
+      - "443:443" 
+    networks:
+      - app-network
+  db:
+    build:
+      context: ./database
+
+    restart: always
+
+    ports:
+      - "3306:3306"
+
+    environment:
+      MYSQL_ROOT_PASSWORD: docker
+      MYSQL_DATABASE: shaverma
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: secret
+
+    volumes:
+      - dbdata:/var/lib/mysql
+
+    networks:
+      - app-network
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    networks:
+      - app-network
+networks:
+  app-network:
+    driver: bridge
+volumes:
+  dbdata:
+    driver: local

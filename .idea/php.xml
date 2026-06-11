@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MessDetectorOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PHPCSFixerOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PHPCodeSnifferOptionsConfiguration">
+    <option name="highlightLevel" value="WARNING" />
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/oc_docker_files/storage/vendor/zoujingli/wechat-php-sdk" />
+      <path value="$PROJECT_DIR$/oc_docker_files/storage/vendor/guzzlehttp/oauth-subscriber" />
+      <path value="$PROJECT_DIR$/oc_docker_files/storage/vendor/braintree/braintree_php" />
+      <path value="$PROJECT_DIR$/oc_docker_files/storage/vendor/guzzlehttp/ringphp" />
+      <path value="$PROJECT_DIR$/oc_docker_files/storage/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/oc_docker_files/storage/vendor/divido/divido-php" />
+      <path value="$PROJECT_DIR$/oc_docker_files/storage/vendor/guzzlehttp/streams" />
+      <path value="$PROJECT_DIR$/oc_docker_files/storage/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/oc_docker_files/storage/vendor/guzzlehttp/log-subscriber" />
+      <path value="$PROJECT_DIR$/oc_docker_files/storage/vendor/scssphp/scssphp" />
+      <path value="$PROJECT_DIR$/oc_docker_files/storage/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/oc_docker_files/storage/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/oc_docker_files/storage/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/oc_docker_files/storage/vendor/klarna/kco_rest" />
+      <path value="$PROJECT_DIR$/oc_docker_files/storage/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/oc_docker_files/storage/vendor/composer" />
+      <path value="$PROJECT_DIR$/oc_docker_files/storage/vendor/cardinity/cardinity-sdk-php" />
+      <path value="$PROJECT_DIR$/oc_docker_files/storage/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/oc_docker_files/storage/vendor/react/promise" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.1">
+    <option name="suggestChangeDefaultLanguageLevel" value="false" />
+  </component>
+  <component name="PhpStanOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PsalmOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+</project>
